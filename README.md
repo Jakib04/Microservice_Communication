@@ -2,9 +2,9 @@
 
 There are 2 microservices in this project. 
 
-The "book_list" microservice returns a list of books. This service is not exposed to outside world. It is written python.
+The "book_list" microservice returns a list of books. This service is not exposed to outside world. It is written in python.
 
-The "view_book" microservice prints the book list sent by the "book_list" microservice. This service is exposed to outside world. Only this service can call the "book_list" microservice. It is written php.
+The "view_book" microservice prints the book list sent by the "book_list" microservice. This service is exposed to outside world. Only this service can call the "book_list" microservice. It is written in php.
 
 After running this command the services are up and can communicate between them.
 
