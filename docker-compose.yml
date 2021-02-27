@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  book-service:
+    build: ./book_list
+    volumes:
+      - ./book_list:/app
+    
+
+  view-service:
+    build: ./view_book
+    volumes:
+      - ./view_book:/var/www/html
+    ports:
+      - 3002:80
+    depends_on:
+      - book-service
